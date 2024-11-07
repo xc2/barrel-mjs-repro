@@ -1,6 +1,6 @@
 import * as __WEBPACK_EXTERNAL_MODULE__foo_js__ from "./foo.js";
 var __webpack_modules__ = {
-    "./foo": function(module) {
+    "./foo.js": function(module) {
         module.exports = __WEBPACK_EXTERNAL_MODULE__foo_js__;
     }
 };
@@ -49,9 +49,9 @@ function __webpack_require__(moduleId) {
 })();
 /************************************************************************/ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
-/* ESM import */ var _foo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./foo");
+/* ESM import */ var _foo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./foo.js");
 /* ESM reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* ESM reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _foo__WEBPACK_IMPORTED_MODULE_0__)if ("default" !== __WEBPACK_IMPORT_KEY__) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = (function(key) {
-    return _foo__WEBPACK_IMPORTED_MODULE_0__[key];
+/* ESM reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _foo_js__WEBPACK_IMPORTED_MODULE_0__)if ("default" !== __WEBPACK_IMPORT_KEY__) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = (function(key) {
+    return _foo_js__WEBPACK_IMPORTED_MODULE_0__[key];
 }).bind(0, __WEBPACK_IMPORT_KEY__);
 /* ESM reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
