@@ -14,12 +14,12 @@ export default /** @type {import('@rspack/core').Configuration} */({
     clean: true,
     filename: '[name].js',
     library: {
-      type: 'module'
+      type: 'modern-module'
     }
   },
   externals: [({request, contextInfo: {issuer}}, callback) => {
     if (issuer) {
-      return callback(null, request)
+      return callback(null, `module-import ${request}`)
     }
     callback()
   }],
@@ -28,6 +28,13 @@ export default /** @type {import('@rspack/core').Configuration} */({
   },
   experiments: {
     outputModule: true,
-  }
+  },
+  plugins: [
+    {
+      apply(compiler) {
+        console.log('rspack version:', compiler.rspack.rspackVersion)
+      }
+    }
+  ]
 
 })

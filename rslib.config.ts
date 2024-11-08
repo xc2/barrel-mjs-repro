@@ -14,6 +14,17 @@ export default defineConfig({
       },
       output: {
         target: 'node'
+      },
+      tools: {
+        rspack: [{
+          plugins: [
+            {
+              apply(compiler) {
+                console.log('rspack version:', compiler.rspack.rspackVersion)
+              }
+            }
+          ]
+        }]
       }
     },
   ],

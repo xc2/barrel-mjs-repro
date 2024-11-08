@@ -1,5 +1,5 @@
 ```sh
-bun run --bun build
-bun test
-node node-test.js
+pnpm i
+pnpm build
+pnpm test
 ```
